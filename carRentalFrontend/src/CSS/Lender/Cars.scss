@@ -1,0 +1,156 @@
+@use 'sass:color';
+
+$warm-blue: #4a90e2;
+$warm-green: #57cc99;
+$warm-gray: #6c757d;
+$warm-beige: #fdfaf6;
+$warm-gold: #f2c94c;
+
+.container-fluid {
+  padding: 2rem;
+  background-color: #f7f4ef;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.lender-table {
+  width: 100%;
+  background-color: $warm-beige;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  thead {
+    background: linear-gradient(to right, #f5d68e, #fceabb);
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  tbody tr:hover {
+    background-color: #fffbe6;
+    transition: background-color 0.3s ease;
+  }
+}
+
+// Buttons
+.btn-primary {
+  background-color: $warm-green;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: color.adjust($warm-green, $lightness: 6%);
+    box-shadow: 0 0 10px rgba(87, 204, 153, 0.4);
+  }
+}
+
+.btn-info {
+  background-color: $warm-blue;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: color.adjust($warm-blue, $lightness: 8%);
+    box-shadow: 0 0 10px rgba(74, 144, 226, 0.4);
+  }
+}
+
+.btn-dark {
+  background-color: $warm-gray;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: color.adjust($warm-gray, $lightness: 6%);
+    box-shadow: 0 0 10px rgba(108, 117, 125, 0.4);
+  }
+}
+
+// Modal
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 30, 30, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 70%;
+  max-width: 850px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.modal-car-image {
+  width: 100%;
+  max-height: 250px;
+  object-fit: contain;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+
+  &:hover {
+    color: crimson;
+    transform: scale(1.2);
+  }
+}
+
+.modal-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.modal-details {
+  flex: 1 1 45%;
+  padding: 0.5rem;
+  font-size: 1rem;
+
+  p {
+    margin: 0.4rem 0;
+  }
+}
+
+.modal-image-container {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

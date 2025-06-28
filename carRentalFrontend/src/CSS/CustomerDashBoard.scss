@@ -1,0 +1,33 @@
+.dashboard-layout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .main-content {
+    display: flex;
+    height: 100%;
+
+    .content-area {
+      flex-grow: 1;
+      padding: 20px;
+      transition: margin-left 0.3s ease;
+    }
+
+    // When sidebar is open, push the content to the right
+    .shifted {
+      margin-left: 220px; // same as sidebar width
+    }
+  }
+}
+.hamburger-icon {
+  color: #1a1a2e; // or white if dark background
+  font-size: 1.5rem;
+  margin-right: 10px;
+  cursor: pointer;
+
+  &:hover {
+    color: #640c39;
+    transform: rotate(90deg);
+    transition: all 0.3s ease;
+  }
+}

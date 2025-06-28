@@ -1,0 +1,84 @@
+.payment-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  // 🌄 Smooth beach-style gradient (sunset > sea > sand)
+  background: linear-gradient(
+    to bottom,
+    #ffecd2,   // light peach (sunset)
+    #fcb69f,   // soft coral
+    #a1c4fd,   // ocean sky blue
+    #c2e9fb,   // seafoam
+    #fef9d7    // sandy cream
+  );
+
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+
+  .payment-card {
+    background: linear-gradient(to bottom right, #ffffff, #eef9f9); // card on light breeze
+    border-radius: 16px;
+    padding: 25px 30px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+    }
+
+    .card-header {
+      background-color: transparent;
+      font-size: 1.4rem;
+      font-weight: 600;
+      text-align: center;
+      color: #f57c00; // warm orange highlight
+      margin-bottom: 15px;
+    }
+
+    .card-body {
+      text-align: center;
+
+      img {
+        width: 100%;
+        max-height: 180px;
+        object-fit: cover;
+        border-radius: 12px;
+        margin-bottom: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      p {
+        font-size: 1rem;
+        margin: 8px 0;
+        color: #444;
+
+        strong {
+          color: #00796b; // soft sea teal
+        }
+      }
+    }
+
+    .card-footer {
+      text-align: center;
+
+      .btn {
+        background-color: #00796b;
+        border: none;
+        padding: 12px 0;
+        width: 100%;
+        border-radius: 8px;
+        font-weight: 600;
+        color: #fff;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #004d40;
+        }
+      }
+    }
+  }
+}

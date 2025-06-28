@@ -1,0 +1,64 @@
+.container-fluid {
+  padding: 2rem;
+
+  .top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    flex-wrap: wrap;
+
+    .welcome-text {
+      flex: 1;
+      min-width: 200px;
+
+      h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: #333;
+      }
+
+      h3 {
+        font-size: 1.3rem;
+        color: #666;
+      }
+    }
+
+    .welcome-img {
+      flex-shrink: 0;
+      margin-left: 2rem;
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+
+  .stats-card-expanded {
+    margin-top: 2.5rem;
+    background-color: #fafafa;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease-in-out;
+
+    .stats-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #222;
+    }
+  }
+}

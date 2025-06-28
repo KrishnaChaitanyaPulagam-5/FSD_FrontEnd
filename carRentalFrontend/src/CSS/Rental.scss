@@ -1,0 +1,57 @@
+/* Rental.scss */
+
+.rental-container {
+  .container-fluid {
+    padding: 30px;
+    background-color: #121212;
+  }
+  
+  .title {
+    text-align: center;
+    color: #e94560;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+  .rental-card {
+    background-color: #1f1f2e;
+    border-radius: 15px;
+    overflow: hidden;
+    color: #fff;
+    box-shadow: 0 0 12px rgba(255, 0, 100, 0.15);
+    transition: transform 0.2s ease;
+  }
+
+  .rental-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 18px rgba(255, 0, 100, 0.25);
+  }
+
+  .rental-header {
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .rental-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 2px solid #e94560;
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #e94560;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+    color: #ccc;
+  }
+}

@@ -1,0 +1,88 @@
+.customer-home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+  min-height: 80vh;
+  background: linear-gradient(to right, #1f1f2e, #2c3e50);
+  color: #fff;
+  font-family: "Segoe UI", sans-serif;
+
+  .welcome-text {
+    flex: 1;
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: #e94560;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+  }
+
+  .welcome-img {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+
+    img {
+      max-width: 90%;
+      max-height: 300px;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+
+    .welcome-img {
+      margin-top: 30px;
+      justify-content: center;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+.stats-card-expanded {
+  margin-top: 50px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .stats-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #f57c00;
+    text-align: left;
+  }
+}
+
+.chart-wrapper {
+  display: flex;
+  justify-content: flex-start;
+
+  .large-doughnut {
+    max-width: 450px;
+    width: 100%;
+  }
+}
