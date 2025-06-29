@@ -1,0 +1,68 @@
+/* GlobalHomePage.scss */
+
+.home-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); // Sporty dark gradient
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 1rem 2rem;
+}
+
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  color: white;
+}
+
+.home-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.home-actions .p-button {
+  margin-left: 1rem;
+}
+
+.home-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.info-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 3rem 4rem;
+  border-radius: 2rem;
+  max-width: 800px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.info-card h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.info-card p {
+  font-size: 1.2rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

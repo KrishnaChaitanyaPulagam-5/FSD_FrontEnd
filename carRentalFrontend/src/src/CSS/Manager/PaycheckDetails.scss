@@ -1,0 +1,55 @@
+.paycheck-card {
+  max-width: 700px;
+  margin: 2rem auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+
+  .card-header {
+    background-color: #f8f9fa;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #e0e0e0;
+    h1 {
+      margin: 0;
+      font-size: 1.75rem;
+      color: #333;
+    }
+  }
+
+  .card-body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 1.5rem;
+
+    .details {
+      flex: 1 1 300px;
+      padding-right: 1rem;
+      p {
+        margin-bottom: 0.75rem;
+        font-size: 1rem;
+        color: #555;
+      }
+      p strong {
+        color: #333;
+      }
+    }
+
+    .image-container {
+      flex: 0 0 250px;
+      text-align: right;
+      img {
+        width: 100%;
+        max-width: 250px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+      }
+      img:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}

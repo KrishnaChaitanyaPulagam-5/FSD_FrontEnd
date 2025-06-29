@@ -1,0 +1,68 @@
+.container {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+
+  .form-control {
+    padding: 0.6rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    font-size: 1rem;
+
+    &:focus {
+      border-color: #4a90e2;
+      box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+    }
+  }
+
+  label {
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+    display: block;
+    color: #444;
+  }
+
+  .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    &.btn-primary {
+      background-color: #007bff;
+      border: none;
+      color: white;
+    }
+
+    &.btn-secondary {
+      background-color: #6c757d;
+      border: none;
+      color: white;
+    }
+  }
+
+  .mt-3 {
+    text-align: center;
+    font-weight: 500;
+    color: #007bff;
+  }
+}

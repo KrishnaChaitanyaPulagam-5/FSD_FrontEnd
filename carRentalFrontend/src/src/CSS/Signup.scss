@@ -1,0 +1,96 @@
+/* Signup.scss */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("/images/Nissan_GTR_R-34.jpg") no-repeat center center fixed;
+  background-size: cover;
+  padding: 30px;
+}
+
+.signup-card {
+  background: rgba(17, 17, 17, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 40px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 0 20px rgba(233, 69, 96, 0.3);
+  color: #f0f0f0;
+  animation: fadeUp 0.6s ease-out;
+}
+
+.signup-card h2 {
+  text-align: center;
+  color: #e94560;
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+.signup-card label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #ccc;
+}
+
+.signup-card input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #444;
+  border-radius: 8px;
+  background-color: #1e1e2f;
+  color: white;
+  transition: 0.3s;
+  margin-bottom: 20px;
+}
+
+.signup-card input:focus {
+  border-color: #e94560;
+  box-shadow: 0 0 10px #e94560;
+  outline: none;
+}
+
+.signup-card button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(to right, #e94560, #ff5f7e);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(233, 69, 96, 0.3);
+}
+
+.signup-card button:hover {
+  background: linear-gradient(to right, #ff5f7e, #e94560);
+  box-shadow: 0 0 20px rgba(233, 69, 96, 0.5);
+  transform: scale(1.02);
+}
+
+.card-footer {
+  margin-top: 15px;
+  text-align: center;
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

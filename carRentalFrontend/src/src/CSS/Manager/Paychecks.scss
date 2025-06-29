@@ -1,0 +1,22 @@
+.container {
+  max-width: 100%;
+  padding: 2rem;
+
+  table {
+    width: 100%;
+    min-width: 1000px; // ensures wider columns
+    table-layout: auto;
+  }
+
+  .table thead th {
+    white-space: nowrap;
+  }
+
+  .table td, .table th {
+    vertical-align: middle;
+    padding: 0.75rem 1rem;
+  }
+
+  // Optional: make the table scrollable on small screens
+  overflow-x: auto;
+}
